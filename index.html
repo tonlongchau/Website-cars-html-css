@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>app car</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header2">
+      <nav>
+        <div class="brand">
+          <img src="img/electriccity.webp" alt="">
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+
+          <li><a href="#">Solutions</a></li>
+
+          <li><a href="#" id="features" >Features</a></li>
+
+          <li><a href="#">Feekback</a></li>
+
+          <li><a href="#">Contact</a></li>
+
+        </ul>
+        <div class="station">
+          <button> Find Station</button>
+        </div>
+      </nav>
+      <section>
+        <div class="content">
+          <h1>Go Electric <br> Go Everywhere </h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in lacinia dui. Sed faucibus id urna non dapibus.</p>
+          <button>Learn More</button>
+        </div>
+      </section>
+      <footer id="footer">
+        <li>Moter Power 130.7 bhp</li>
+        <li>Battery Capacity 30.2</li>
+        <li>Range 312 km</li>
+        <li>Changing Time 60 min (0 - 80%)</li>
+        <li>Max Power 332.7 bhp</li>
+        <li>Max Power 330 km</li>
+
+
+
+      </footer>
+    </div>
+  </header>
+
+  <script>
+    const features = document.getElementById("features");
+    const footer = document.getElementById("footer");
+
+    features.addEventListener('click', ()=>{
+      footer.classList.toggle("footers");
+      features.classList.toggle("clicks");
+
+    })
+
+  </script>
+</body>
+</html>
